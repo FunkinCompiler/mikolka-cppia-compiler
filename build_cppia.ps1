@@ -115,7 +115,7 @@ if (-not $Classes -or $Classes.Count -eq 0) {
             Sort-Object FullName |
             ForEach-Object {
                 $relativePath = $_.FullName.Substring($root.Length)
-                [System.IO.Path]::ChangeExtension($relativePath, $null).Replace('\', '.').Replace('/', '.')
+                [System.IO.Path]::ChangeExtension($relativePath, $null).Replace('\', '.').Replace('/', '.') -replace '\.$', ''
             }
     )
 }
