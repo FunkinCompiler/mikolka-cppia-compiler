@@ -67,9 +67,6 @@ haxe_std_path() {
     "/opt/homebrew/lib/haxe/std"
     "/opt/homebrew/share/haxe/std"
     "/opt/local/lib/haxe/std"
-    "C:/HaxeToolkit/haxe/std"
-    "C:/Program Files/HaxeToolkit/haxe/std"
-    "C:/Haxe/haxe/std"
     "$HOME/haxe/std"
     "$HOME/HaxeToolkit/haxe/std"
   )
