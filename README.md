@@ -17,6 +17,8 @@ Then you'll need to download a [CPPIA SDK](https://github.com/FunkinCompiler/fcp
 
 I recommend downloading from the "latest" release, but you can download a different one if you're compiling for other versions of the game.
 
+To extract it, add the ".zip" extension (from `fnf090-full.fcpkg` to `fnf090-full.fcpkg.zip`)
+
 And lastly, run the script ``./build_cppia.sh --sdk ./cppia-sdk ./cppia-src out.cppia`` where:
 - `--sdk` point to your CPPIA SDK folder, where you've extracted the .fcpkg
 - `./cppia-src` is a path to the code you want to compile

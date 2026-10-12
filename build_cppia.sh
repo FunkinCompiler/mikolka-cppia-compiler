@@ -164,7 +164,7 @@ CPPIA_SDK="$SDK_ABS"
 #CPPIA subtitution
 while IFS= read -r line || [[ -n $line ]]; do
     line=${line//'$HAXE_STD'/"$HAXE_STD"}
-    line=${line//'$HAXE_STD'/"$HAXE_STD"}
+    line=${line//'$CPPIA_SDK'/"$CPPIA_SDK"}
     printf '%s\n' "$line"
 done < "$HOST_CLASSES" > "$GEN_CPPIA_INFO"
 
