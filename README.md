@@ -1,8 +1,8 @@
 # Mikolka's alternative CPPIA Compiler
 
-This project serves as a **proper** implementation of the CPPIA compiler for the Friday Night Funkin.
+This project serves as an alternative implementation of the CPPIA compiler for the Friday Night Funkin.
 
-By **proper** I mean:
+## Main features
 - Not requiring you to download an entire game's source code + dependencies (which can take around 2GBs if not more)
   - This implies no need to compile lime (which also takes a while) 
 - Lightweight (everything needed to get started easily fits in the 10 Mb of space)
