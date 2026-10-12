@@ -28,4 +28,4 @@ I provided a small port of my PaRappa mod as a sanity check (in case you want to
 
 ## What is ".fcpkg"
 
-See [here]().
+https://github.com/FunkinCompiler/fcpkg-template-repository
