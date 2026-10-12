@@ -86,14 +86,30 @@ haxe_std_path() {
   return 1
 }
 
+
+make_temp_file() {
+  local suffix="${1:-}"
+  local dir file
+
+  dir=$(mktemp -d) || return 1
+  file="$dir/$suffix"
+
+  if ! (umask 077; : > "$file"); then
+    rmdir "$dir"
+    return 1
+  fi
+
+  printf '%s\n' "$file"
+}
+
 # finish
 
 
 
-GENERATED="$(mktemp -t cppia-XXXXXX.hxml)"
+GENERATED="$(make_temp_file cppia.hxml)"
 trap 'rm -f "$GENERATED"' EXIT
 
-GEN_CPPIA_INFO="$(mktemp -t export_classes_XXXXXX.info)"
+GEN_CPPIA_INFO="$(make_temp_file export_classes.info)"
 trap 'rm -f "$GENERATED"' EXIT
 
 # Let's check the env
